@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.esprit.intro.miniprojet">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/logoparamedical"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".PlanificationRendezVous_PatientActivity" />
+        <activity android:name=".ProfilPatient_PatientActivity">
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".fichepatient" />
+        <activity android:name=".RDV_PatientActivity" />
+        <activity android:name=".Accueil_DocteurActivity" />
+        <activity android:name=".Patients_docteurActivity" />
+        <activity android:name=".ProfilPatient_DocteurActivity" />
+        <activity android:name=".DetailConsultationDunPatient_DocteurActivity" />
+        <activity android:name=".AjoutConsultation_DocteurActivity" />
+        <activity android:name=".Statistique_DocteurActivity" />
+        <activity android:name=".ActivityLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MesRendezVous_patientActivity" />
+        <activity android:name=".ListeRendezVous_DocteurActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:label="@string/title_activity_main2" />
+        <activity android:name=".SwipeMenuDocteur" />
+        <activity android:name=".Inscription" />
+        <activity android:name=".AcceuilSecretaire" />
+        <activity android:name=".InscriptionPatient" />
+        <activity android:name=".Inscriptionmedecin" />
+        <activity android:name=".ajoucabinet" />
+        <activity android:name=".parametreprofil" />
+        <activity android:name=".SecretaireRendezvous" />
+        <activity android:name=".testactivity" />
+        <activity android:name=".cabinetmap" />
+        <activity android:name=".Conversation" />
+        <activity android:name=".MessageContacts__DocteurActivity" />
+        <activity android:name=".ConversationDocteur" />
+        <activity android:name=".Ajoutsecretairedoc" />
+        <activity android:name=".secretaoreswipe" />
+        <activity android:name=".adminacceuil" />
+        <activity android:name=".ActivityUpdateProfil__PatientActivity" />
+        <activity android:name=".SearchResultsActivity">
+
+        </activity>
+    </application>
+
+</manifest>

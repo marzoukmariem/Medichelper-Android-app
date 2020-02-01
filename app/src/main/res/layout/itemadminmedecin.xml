@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="109dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="382dp"
+            android:layout_height="37dp"
+            android:layout_marginEnd="2dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+
+            >
+
+            <TextView
+                android:id="@+id/nomdoc"
+                android:layout_width="85dp"
+                android:layout_height="22dp"
+
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textSize="15dp"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/prenomdoc"
+                android:layout_width="87dp"
+                android:layout_height="21dp"
+
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:layout_marginRight="200dp"
+                app:layout_constraintStart_toEndOf="@+id/nomdoc" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtdiplome"
+                android:layout_width="392dp"
+                android:layout_height="36dp"
+                android:text="Voir Diplôme"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/txtapp"
+                android:layout_marginLeft="150dp"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtapp"
+                android:layout_width="389dp"
+                android:layout_height="match_parent"
+
+                android:text="approuver medecin"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginLeft="100dp"
+
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
